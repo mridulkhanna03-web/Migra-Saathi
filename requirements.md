@@ -2,7 +2,7 @@
 
 ## Introduction
 
-MigraSaathi is a WhatsApp-based, voice-first relocation assistant designed to help internal migrants in India access essential services including PG accommodations, job opportunities, essential services, and guidance. The MVP focuses on Bangalore as a pilot city to enable execution within a hackathon timeline, leveraging AWS-powered AI tools to provide intelligent, conversational assistance.
+MigraSaathi is a WhatsApp-based, voice-first relocation assistant designed to help internal migrants in India access essential services including PG accommodations, job opportunities, essential services, and guidance. The MVP focuses on Delhi as a pilot city to enable execution within a hackathon timeline, leveraging AWS-powered AI tools to provide intelligent, conversational assistance.
 
 ## Glossary
 
@@ -62,7 +62,7 @@ MigraSaathi is a WhatsApp-based, voice-first relocation assistant designed to he
 #### Acceptance Criteria
 
 1. WHEN a user asks procedural questions like "How to update Aadhaar", THE Bedrock_Engine SHALL provide step-by-step guidance
-2. WHEN city-specific information is requested, THE Bedrock_Engine SHALL provide Bangalore-specific context and procedures
+2. WHEN city-specific information is requested, THE Bedrock_Engine SHALL provide Delhi-specific context and procedures
 3. WHEN guidance is provided, THE System SHALL format responses in clear, actionable steps
 4. WHEN complex procedures are explained, THE System SHALL break them down into simple, sequential instructions
 5. WHEN users ask follow-up questions, THE Bedrock_Engine SHALL maintain context and provide relevant additional information
@@ -113,4 +113,5 @@ MigraSaathi is a WhatsApp-based, voice-first relocation assistant designed to he
 2. WHEN job data is stored, THE Data_Store SHALL include role, location, contact, and job type information
 3. WHEN POI data is stored, THE Data_Store SHALL include service type, address, and operational details
 4. WHEN data queries are executed, THE System SHALL return results within 2 seconds
+
 5. WHEN data is retrieved, THE System SHALL ensure all required fields are present and valid
