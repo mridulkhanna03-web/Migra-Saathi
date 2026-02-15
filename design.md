@@ -4,7 +4,7 @@
 
 MigraSaathi is a serverless, AI-powered WhatsApp chatbot designed to assist internal migrants in India with relocation services. The system leverages AWS services to provide intelligent, conversational assistance for finding PG accommodations, job opportunities, essential services, and city guidance.
 
-The architecture follows a microservices pattern with event-driven communication, ensuring scalability and maintainability within the hackathon timeline constraints. The system is designed for the Bangalore pilot city with a focus on rapid deployment and demonstration.
+The architecture follows a microservices pattern with event-driven communication, ensuring scalability and maintainability within the hackathon timeline constraints. The system is designed for the Delhi pilot city with a focus on rapid deployment and demonstration.
 
 ## Architecture
 
@@ -145,7 +145,7 @@ The system follows a serverless architecture pattern with the following key comp
 **Purpose**: Provides AI-powered responses to city-related questions with contextual understanding and procedural guidance
 
 **Interfaces**:
-- `generateResponse(question, context)`: Generates contextual responses using Claude with Bangalore-specific information
+- `generateResponse(question, context)`: Generates contextual responses using Claude with Delhi-specific information
 - `formatGuidance(procedure, steps)`: Formats procedural guidance into clear, actionable steps
 - `maintainContext(conversationHistory)`: Maintains conversation context for follow-up questions and continuity
 - `provideStepByStepInstructions(procedure)`: Breaks down complex procedures into simple, sequential instructions
@@ -340,4 +340,5 @@ interface CommunityGroup {
 - Community recommendations offered after service interactions
 - Group recommendations based on user's regional background
 - Clear participation guidelines provided with group links
+
 - Community expectations communicated before joining
